@@ -1,6 +1,4 @@
-# PROYECT_AGIL
-
-Informe del Proyecto: PROYECT_AGIL
+# Informe del Proyecto: PROYECT_AGIL
 1. Descripción General
 
 El proyecto PROYECT_AGIL parece formar parte de un trabajo académico o de una práctica de desarrollo ágil. Se encuentra organizado dentro de un repositorio que contiene documentación, scripts y fragmentos de código asociados a un módulo llamado Grupo09_Pagos, que sugiere una funcionalidad relacionada con la gestión de pagos o deudas.
@@ -8,7 +6,7 @@ El proyecto PROYECT_AGIL parece formar parte de un trabajo académico o de una p
 El archivo principal de documentación es un README.md que menciona herramientas de desarrollo y referencias a documentos de Google Drive relacionados con historias de usuario.
 
 2. Estructura del Proyecto
-📁 Carpeta principal: PROYECT_AGIL
+ Carpeta principal: PROYECT_AGIL
 
 Contiene:
 
@@ -20,7 +18,7 @@ Carpeta Grupo09_Pagos — Implementación técnica del módulo de pagos (el núc
 
 Dentro de esta carpeta se encuentran los siguientes componentes:
 
-📄 1. debt_manager_db_schema.sql
+1. debt_manager_db_schema.sql
 
 Archivo de definición de base de datos que contiene:
 
@@ -29,7 +27,7 @@ Creación de tablas relacionadas con la gestión de deudas/pagos.
 Posibles estructuras como usuarios, transacciones, deudas y movimientos.
 Este archivo indica que el sistema maneja información estructurada para registrar obligaciones financieras entre usuarios.
 
-⚙️ 2. debt_manager_env_config.sh
+ 2. debt_manager_env_config.sh
 
 Script de configuración del entorno:
 
@@ -37,7 +35,7 @@ Define variables o rutas necesarias para la ejecución del proyecto.
 
 Probablemente usado para automatizar la preparación del entorno en Linux/macOS.
 
-🌐 3. frontend_api_integration.js
+3. frontend_api_integration.js
 
 Archivo de integración entre el frontend y la API:
 
@@ -47,13 +45,13 @@ Gestiona el intercambio de datos entre interfaz y backend.
 
 Indica que el proyecto tiene al menos una parte de frontend que interactúa con servicios web.
 
-📝 4. deepseek_html_20251207_46b5de.html
+4. deepseek_html_20251207_46b5de.html
 
 Archivo HTML posiblemente generado por una IA o herramienta externa (DeepSeek).
 
 Puede ser documentación adicional, resultados de análisis o una vista previa.
 
-📁 5. .git
+ 5. .git
 
 Carpeta del control de versiones Git:
 
@@ -68,7 +66,40 @@ Según el contenido inspeccionado:
 Visual Studio Code como entorno principal.
 
 Bases de datos SQL (se deduce por el archivo .sql).
+Se utilizo la extension :
 
+SQLite Viewer
+
+Docker Run
+
+Caracteristicas del lenguaje JSON
+
+PostgreSQL
+
+JSON Server
+
+#PARÁMETROS DE CONEXIÓN
+
+NOMBRE DEL SERVIDOR *
+localhost
+
+TIPO DE AUTENTICACIÓN *
+Contraseña
+
+NOMBRE DE USUARIO *
+postgres
+
+CONTRASEÑA
+[ ] GUARDAR CONTRASEÑA
+
+NOMBRE DE LA BASE DE DATOS
+postgres
+
+NOMBRE DE CONEXIÓN
+Grupo09_Agil_Developer
+
+GRUPO DE SERVIDORES *
+Servidores
 JavaScript para la integración frontend/API.
 
 Shell scripting para automatización de entorno.
@@ -106,41 +137,6 @@ La documentación externa (Google Docs) probablemente complete la información f
 El proyecto PROYECT_AGIL es un trabajo estructurado bajo metodologías ágiles, enfocado en la gestión de pagos o deudas. Incluye bases de datos, integraciones API y scripts de automatización. Su estructura sugiere que forma parte de un proyecto educativo o colaborativo que sigue buenas prácticas de desarrollo (uso de Git, 
 documentación, modularidad).
 
-El visual studio code se utilizo la 
-extension :
-
-SQLite Viewer
-
-Docker Run
-
-Caracteristicas del lenguaje JSON
-
-PostgreSQL
-
-JSON Server
-
-#PARÁMETROS DE CONEXIÓN
-
-NOMBRE DEL SERVIDOR *
-localhost
-
-TIPO DE AUTENTICACIÓN *
-Contraseña
-
-NOMBRE DE USUARIO *
-postgres
-
-CONTRASEÑA
-[ ] GUARDAR CONTRASEÑA
-
-NOMBRE DE LA BASE DE DATOS
-postgres
-
-NOMBRE DE CONEXIÓN
-Grupo09_Agil_Developer
-
-GRUPO DE SERVIDORES *
-Servidores
 
 link:( Historia de usuario)
 

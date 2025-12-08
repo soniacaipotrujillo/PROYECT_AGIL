@@ -1,0 +1,9 @@
+# Dependencias (muy pesado, nunca se sube)
+node_modules
+
+# Variables de entorno (seguridad, tiene tus contraseñas)
+.env
+
+# Archivos de sistema operativo (basura)
+.DS_Store
+Thumbs.db

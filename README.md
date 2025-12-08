@@ -3,8 +3,6 @@
 
 El proyecto PROYECT_AGIL parece formar parte de un trabajo académico o de una práctica de desarrollo ágil. Se encuentra organizado dentro de un repositorio que contiene documentación, scripts y fragmentos de código asociados a un módulo llamado Grupo09_Pagos, que sugiere una funcionalidad relacionada con la gestión de pagos o deudas.
 
-El archivo principal de documentación es un README.md que menciona herramientas de desarrollo y referencias a documentos de Google Drive relacionados con historias de usuario.
-
 2. Estructura del Proyecto
  Carpeta principal: PROYECT_AGIL
 

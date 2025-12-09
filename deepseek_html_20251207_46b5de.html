@@ -977,7 +977,7 @@
             ¡Deuda Vencida!
         </div>
         <div class="notification-message" id="notificationMessage"></div>
-        <button class="btn-primary" onclick="goToDebts()">Ver Deudas</button>
+        <button type="button" class="btn-primary" onclick="goToDebts()">Ver Deudas</button>
     </div>
 
     <!-- Modal de Pago -->
@@ -1070,8 +1070,8 @@
 
                 <div class="form-group">
                     <label class="form-label">Monto por Cuota (S/)</label>
-                    <input type="text" class="form-input" id="installmentAmount" readonly style="background-color: #f8f9fa; font-weight: bold; color: #667eea;">
-                    <small style="color: #666; font-size: 12px; display: block; margin-top: 5px;">Se calculará automáticamente</small>
+                    <input type="text" class="form-input" id="installmentAmount" readonly >
+                    <small >Se calculará automáticamente</small>
                 </div>
 
                 <div class="form-group">
@@ -1097,28 +1097,28 @@
 
     <!-- Modal de Notificaciones -->
     <div id="notificationsModal" class="modal">
-        <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-content" >
             <div class="modal-header">
                 <h3 class="modal-title">Notificaciones</h3>
                 <div class="close-modal" onclick="closeModal()">×</div>
             </div>
 
-            <div class="filters" style="margin-bottom: 20px;">
-                <button class="filter-btn active" onclick="filterNotifications('all')">Todas</button>
-                <button class="filter-btn" onclick="filterNotifications('overdue')">Vencidas</button>
-                <button class="filter-btn" onclick="filterNotifications('upcoming')">Próximas</button>
-                <button class="filter-btn" onclick="filterNotifications('past_start')">Sin Pagos</button>
-                <button class="filter-btn" onclick="markAllAsRead()" style="background: #667eea; color: white;">
+            <div class="filters" >
+                <button type="button" class="filter-btn active" onclick="filterNotifications('all')">Todas</button>
+                <button type="button" class="filter-btn" onclick="filterNotifications('overdue')">Vencidas</button>
+                <button type="button" class="filter-btn" onclick="filterNotifications('upcoming')">Próximas</button>
+                <button type="button" class="filter-btn" onclick="filterNotifications('past_start')">Sin Pagos</button>
+                <button type="button" class="filter-btn" onclick="markAllAsRead()" >
                     <i class="fas fa-check-double"></i> Marcar todas
                 </button>
             </div>
 
-            <div id="notificationsList" style="max-height: 400px; overflow-y: auto;">
+            <div id="notificationsList" >
                 <!-- Notificaciones se cargarán aquí -->
             </div>
 
-            <div id="noNotifications" class="hidden" style="text-align: center; padding: 40px; color: #666;">
-                <i class="fas fa-bell-slash" style="font-size: 40px; margin-bottom: 15px;"></i>
+            <div id="noNotifications" class="hidden" >
+                <i class="fas fa-bell-slash" ></i>
                 <p>No hay notificaciones</p>
             </div>
         </div>
@@ -1173,19 +1173,19 @@
                 <div class="section-title">
                     <span id="dashboardTitle">Resumen de Deudas</span>
                     <div class="month-selector">
-                        <button class="month-btn" onclick="previousMonth()"><i class="fas fa-chevron-left"></i></button>
+                        <button type="button" class="month-btn" onclick="previousMonth()"><i class="fas fa-chevron-left"></i></button>
                         <span class="current-month" id="currentMonth"></span>
-                        <button class="month-btn" onclick="nextMonth()"><i class="fas fa-chevron-right"></i></button>
+                        <button type="button" class="month-btn" onclick="nextMonth()"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
 
                 <!-- Filtros -->
                 <div class="filters">
-                    <button class="filter-btn active" onclick="filterDebts('all')">Todas</button>
-                    <button class="filter-btn" onclick="filterDebts('pending')">Pendientes</button>
-                    <button class="filter-btn" onclick="filterDebts('overdue')">Vencidas</button>
-                    <button class="filter-btn" onclick="filterDebts('paid')">Pagadas</button>
-                    <button class="filter-btn" onclick="filterDebts('thisWeek')">Esta Semana</button>
+                    <button type="button" class="filter-btn active" onclick="filterDebts('all')">Todas</button>
+                    <button type="button" class="filter-btn" onclick="filterDebts('pending')">Pendientes</button>
+                    <button type="button" class="filter-btn" onclick="filterDebts('overdue')">Vencidas</button>
+                    <button type="button" class="filter-btn" onclick="filterDebts('paid')">Pagadas</button>
+                    <button type="button" class="filter-btn" onclick="filterDebts('thisWeek')">Esta Semana</button>
                 </div>
 
                 <!-- Estadísticas -->
@@ -1573,7 +1573,7 @@
                                 <div class="debt-bank">
                                     <i class="fas fa-university"></i>
                                     ${debt.bank}
-                                    ${debt.interestRate ? `<span style="margin-left: 10px; font-size: 12px; color: ${debt.interestType === 'fijo' ? '#ef4444' : '#f59e0b'};">${debt.interestRate}% ${debt.interestType}</span>` : ''}
+                                    ${debt.interestRate ? `<span >${debt.interestRate}% ${debt.interestType}</span>` : ''}
                                 </div>
                             </div>
                             <div class="debt-amount">S/ ${remainingAmount.toLocaleString('es-PE', {minimumFractionDigits: 2})}</div>
@@ -1599,7 +1599,7 @@
                         </div>
                         
                         <div class="installment-progress">
-                            <div class="installment-progress-bar" style="width: ${progressPercentage}%"></div>
+                            <div class="installment-progress-bar" ></div>
                         </div>
                         <div class="installment-info">
                             <span>Progreso: ${debt.paidInstallments || 0} de ${debt.totalInstallments || debt.numberOfInstallments || 12} cuotas</span>
@@ -1614,13 +1614,13 @@
                         
                         ${debt.status !== 'paid' ? `
                             <div class="payment-methods">
-                                <button class="payment-btn credit" onclick="showPaymentModal(${debt.id}, 'tarjeta')">
+                                <button type="button" class="payment-btn credit" onclick="showPaymentModal(${debt.id}, 'tarjeta')">
                                     <i class="fas fa-credit-card"></i> Tarjeta
                                 </button>
-                                <button class="payment-btn debit" onclick="showPaymentModal(${debt.id}, 'transferencia')">
+                                <button type="button" class="payment-btn debit" onclick="showPaymentModal(${debt.id}, 'transferencia')">
                                     <i class="fas fa-exchange-alt"></i> Transferencia
                                 </button>
-                                <button class="payment-btn cash" onclick="showPaymentModal(${debt.id}, 'efectivo')">
+                                <button type="button" class="payment-btn cash" onclick="showPaymentModal(${debt.id}, 'efectivo')">
                                     <i class="fas fa-money-bill-wave"></i> Efectivo
                                 </button>
                             </div>
@@ -1670,7 +1670,7 @@
                     <div class="installment-buttons" id="installmentButtons">
                         ${installmentButtons}
                     </div>
-                    <div style="margin-top: 15px;">
+                    <div >
                         <label class="form-label">Cuotas a pagar:</label>
                         <input type="number" class="form-input" id="installmentsToPay" 
                                min="1" max="${remainingInstallments}" value="1" 
@@ -1804,7 +1804,7 @@
                     <p><strong>Cuotas pagadas:</strong> ${debt.paidInstallments}/${debt.totalInstallments}</p>
                     <p><strong>Cuotas pendientes:</strong> ${remainingInstallments}</p>
                     <p><strong>Saldo pendiente:</strong> S/ ${(debt.amount - debt.paidAmount).toLocaleString('es-PE', {minimumFractionDigits: 2})}</p>
-                    <button class="btn-primary" onclick="closeModal(); updateStats(); renderDebts();">
+                    <button type="button" class="btn-primary" onclick="closeModal(); updateStats(); renderDebts();">
                         <i class="fas fa-check"></i> Aceptar
                     </button>
                 </div>
@@ -2006,10 +2006,10 @@
                                 ${notification.title}
                                 <span class="notification-type-badge ${typeClass}">${typeText}</span>
                             </div>
-                            <div style="display: flex; align-items: center; gap: 10px;">
+                            <div >
                                 <span class="notification-time">${timeAgo}</span>
                                 ${!notification.read ? `
-                                    <button class="mark-read-btn" onclick="markAsRead(${notification.id}); event.stopPropagation();">
+                                    <button type="button" class="mark-read-btn" onclick="markAsRead(${notification.id}); event.stopPropagation();">
                                         <i class="fas fa-check"></i>
                                     </button>
                                 ` : ''}
